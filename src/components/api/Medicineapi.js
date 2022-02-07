@@ -1,6 +1,6 @@
 export const Medicineapi = [
     {
-        "no" : 1,
+        "id" : 1,
         "name" : "Parachetamol dolo-650",
         "price" : 20,
         "img" : "https://m.media-amazon.com/images/I/91bz6RZlHZL._SL1500_.jpg",
@@ -11,7 +11,7 @@ export const Medicineapi = [
         "direction" : "You should only take four doses of  Paracetamol 650mg Tablet in 24 hours. There should be a gap of at least 4 hours between two doses"
     },
     {
-        "no" : 2,
+        "id" : 2,
         "name" : "Crocin Advance 20s tablets",
         "price" : 20,
         "img" : "https://5.imimg.com/data5/SELLER/Default/2021/5/CU/SL/WY/33567294/crocin-advance-tablet-500x500.jpg",
@@ -23,7 +23,7 @@ export const Medicineapi = [
     },
     {
 
-        "no" : 3,
+        "id" : 3,
         "name" : "Vicks VapoRub",
         "price" : 30,
         "img" : "https://m.media-amazon.com/images/I/81CZXIgv7qL._SY450_.jpg",
@@ -34,7 +34,7 @@ export const Medicineapi = [
         "direction" : "rub a thick layer of Vicks VapoRub on your chest and throat."
     },
     {
-        "no" : 4,
+        "id" : 4,
         "name" : "Zandu Balm",
         "price" : 30,
         "img" : "https://5.imimg.com/data5/NF/QD/MY-13059620/zandu-balm-500x500.png",
@@ -45,7 +45,7 @@ export const Medicineapi = [
         "direction" : "Apply on affected parts and massage gently. For external use only"
     },
     {
-        "no" : 5,
+        "id" : 5,
         "name" : "MucoPain",
         "price" : 49,
         "img" : "https://newassets.apollo247.com/pub/media/catalog/product/m/u/muc0022_3.jpg",
@@ -56,7 +56,7 @@ export const Medicineapi = [
         "direction" : "Mucopain Gel should be applied over the affected area with a clean fingertip, three to four times a day or as directed by your doctor. Once you apply the medication, wait for at least 30 minutes before eating and drinking anything. Avoid getting it in the eyes or nose."
     },
     {
-        "no" : 6,
+        "id" : 6,
         "name" : "Ciprofloxacin",
         "price" : 10,
         "img" : "https://5.imimg.com/data5/UK/RG/MY-22145192/ciprofloxacin-eye-drops-500x500.png",
@@ -67,7 +67,7 @@ export const Medicineapi = [
         "direction" : "Adults and children—Put 1 or 2 drops in the affected eye every 2 hours, while awake, for 2 days. Then, put 1 or 2 drops in the affected eye every 4 hours, while awake, for the next 5 days."
     },
     {
-        "no" : 7,
+        "id" : 7,
         "name" : "Crocin 650 tablet",
         "price" : 25,
         "img" : "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol/en_in/adult/productshots/crocinpainrelief/Crocin%20Pain%20Relief-Web%20Banner_630x390.png?auto=format",
@@ -78,7 +78,7 @@ export const Medicineapi = [
         "direction" : "Crocin 650 MG Tablet can be taken with or without food. If your doctor has prescribed this medicine, take it for the recommended duration"
     },
     {
-        "no" : 8,
+        "id" : 8,
         "name" : "hevert GastroIntestinal Relief",
         "price" : 20,
         "img" : "https://i0.wp.com/homeomart.net/wp-content/uploads/2017/09/hevert-gastro-germany-intestinal-relief-tablets.jpg?fit=542%2C470&ssl=1",
@@ -89,7 +89,7 @@ export const Medicineapi = [
         "direction" : "May be taken concurrently with conventional medications."
     },
     {
-        "no" : 9,
+        "id" : 9,
         "name" : "Safi",
         "price" : 120,
         "img" : "https://m.media-amazon.com/images/I/71jNPE91VSL._SL1500_.jpg",
@@ -100,10 +100,10 @@ export const Medicineapi = [
         "direction" : "Consume Hamdard Safi once or twice a day along with warm water."
     },
     {
-        "no" : 10,
+        "id" : 10,
         "name" : "dabur chyawanprash",
         "price" : 280,
-        "img" : "https://m.media-amazon.com/images/I/71jNPE91VSL._SL1500_.jpg",
+        "img" : "https://www.dabur.com/img/product/large/24-dabur-chyawanprash.png",
         "quantity"  : 1,
         "description"  : "Dabur Chyawanprash is a clinically tested Ayurvedic formulation of more than 41 Ayurvedic herbs that aid in boosting the immune system, thereby protecting the body from everyday infections like cough & cold etc. caused by bacteria, viruses, dust and weather change.",
         "tag"  : "immunity blood weight",

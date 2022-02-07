@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import MedicineInfo from "./MedicineInfo";
 
 const medicinePassing = () => {
-    const item = useSelector(state=>state.Reducers.item);
+    const item = useSelector(state=>state.getProducts.item);
     
   return (
     <>

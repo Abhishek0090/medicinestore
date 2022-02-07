@@ -3,11 +3,11 @@ import { useSelector } from "react-redux";
 import "./info.css";
 
 
-const MedicineInfo = ({id,img,name,description,price,quantity}) => {
-    // const img = "https://m.media-amazon.com/images/I/71jNPE91VSL._SL1500_.jpg"
-    // const price = 200
-    // const name = "Hamdard Safi Natural Blood Purifier Syrup, 500 ml"
-    // const description = "Hamdard Safi Syrup is a blood purifier herbal remedy for skin diseases"
+const MedicineInfo = () => {
+    const img = "https://m.media-amazon.com/images/I/71jNPE91VSL._SL1500_.jpg"
+    const price = 200
+    const name = "Hamdard Safi Natural Blood Purifier Syrup 500 ml"
+    const description = "Hamdard Safi Syrup is a blood purifier herbal remedy for skin diseases"
     const keybenefits = "Treats acne vulgaris, boils, skin, rashes, blemishes, urticaria etc "
     const direction = "As per the requirement or as directed on the pack"
     const ingredients = "Hamdard Safi Syrup Contains Sana, Sheesham, Sandal, Gilo, Harar, Chiraita, Nilkanthi, Neem, Tulsi, Chob Chini, Keekar, Brahmi, Kasni, Unnab, Revand Chini, Qand Safaid, And Shora Desi As Major Ingredients."
@@ -20,7 +20,7 @@ const MedicineInfo = ({id,img,name,description,price,quantity}) => {
       </div>
       <div className="infosection">
         <h2 className="fw-bold">{name}</h2>
-        <p>Mrp{" "}{price}</p>
+        <p>MRP{" "}: {price}</p>
         <hr />
         <div className="productDiv">
         <h2>Product details</h2>
@@ -38,7 +38,7 @@ const MedicineInfo = ({id,img,name,description,price,quantity}) => {
         </a>
         <button className="btnquantity">
         <i class="fa fa-plus" aria-hidden="true"></i>
-          <input type="text" value="1" />
+          <input type="text" value="1" className="quaninput"/>
           <i class="fa fa-minus" aria-hidden="true"></i>
         </button>
         <a href="/buy">

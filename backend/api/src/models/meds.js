@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const medSchema = new mongoose.Schema({
-  no: {
+  id: {
     type: Number,
     required: true,
     unique: true,

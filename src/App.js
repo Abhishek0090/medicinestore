@@ -16,6 +16,8 @@ import MyOrders from "./components/MyOrders";
 import MedicineInfo from "./components/MedicineInfo/MedicineInfo";
 import Cart from "./components/shoppingcart/Cart";
 import CartItem from "./components/shoppingcart/CartItem";
+import About from "./components/About";
+import User from "./components/User";
 
 
 function App() {
@@ -32,6 +34,10 @@ function App() {
         <Route exact path="/signup" element={<SignUp/>}/>
         <Route exact path="/medicines" element={<MedicineInfo/>}/>
         <Route exact path = "/cart" element={<CartItem/>}/>
+        <Route exact path = "/about" element={<About/>}/>
+        <Route exact path = "/user" element={<User/>}/>
+        <Route exact path = "/search" element={<Medicines/>}/>
+
       </Routes>
       {/* <footer className="footer">
         Copyright © 2021 

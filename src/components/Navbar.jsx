@@ -74,9 +74,12 @@ const Navbar = () => {
                   class="form-control"
                 />
               </div>
-              <button id="search-button" type="button" class="btn btn-success">
+              <a href="/search">
+
+              <button id="search-button" type="button" class="btn btn-success" >
                 <i class="fas fa-search"></i>
               </button>
+              </a>
             </div>
             <div className="cart-icon">
               <a href="/cart">
