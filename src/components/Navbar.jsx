@@ -1,23 +1,21 @@
 import React from "react";
-import "./css/Navbarcss.css";
+import "./navbarcss/Navbarcss.css";
 import { useState } from "react";
 import { useContext } from "react";
-import MedicineContext from "./Context/MedicineContext";
 
 const Navbar = () => {
   const [search, setSearch] = useState("");
   const [result, setResult] = useState([]);
-  // const {totalItem} = useContext(MedicineContext);
 
-const onChange = (e)=>{
-  const data = e.target.value
-  setSearch(data)
-}
+  const onChange = (e) => {
+    const data = e.target.value;
+    setSearch(data);
+  };
 
   return (
     <div>
       <nav
-        className="navbar navbar-expand-sm navbar-light bg-light  navbar-fixed-top"
+        className="navbar navbar-expand-sm navbar-light bg-succeed  navbar-fixed-top  nav nav-tabs card-header-tabs"
         role="navigation"
       >
         <div className="container-fluid">
@@ -44,7 +42,7 @@ const onChange = (e)=>{
             </a>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link Active" aria-current="page" href="/">
+                <a className="nav-link" aria-current="page" href="/">
                   Home
                 </a>
               </li>
@@ -58,20 +56,12 @@ const onChange = (e)=>{
                   About us
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/help">
+                  Help
+                </a>
+              </li>
             </ul>
-            {/* <form className="d-flex centerSearch">
-              <input
-                className=" searchInput form-control me-8 mx-5"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                }
-                placeholder="Search for Medicines"
-              ></input>
-              <button className="btn btn-outline-success" type="submit">
-                <i class="fas fa-search"></i>
-              </button>
-            </form> */}
             <div class="centerSearch d-flex ">
               <div class="form-outline">
                 <input
@@ -79,39 +69,48 @@ const onChange = (e)=>{
                   type="search"
                   id="form1"
                   value={search}
-                onChange={onChange}
+                  onChange={onChange}
                   placeholder=" Search for Medicine"
                   class="form-control"
                 />
               </div>
-              <button id="search-button" type="button" class="btn btn-warning">
+              <button id="search-button" type="button" class="btn btn-success">
                 <i class="fas fa-search"></i>
               </button>
             </div>
-            <div className="signup">
-              <div className="cart-icon">
-                <a href="/cart">
-                  <img
-                    src="./assets/carticon.png"
-                    alt="cart"
-                    className="cartIcon"
-                  />
-                </a>
-                <a href="/login">
+            <div className="cart-icon">
+              <a href="/cart">
+                <img
+                  src="./assets/carticon.png"
+                  alt="cart"
+                  className="cartIcon"
+                />
+              </a>
+            </div>
+            <div className="validation">
+            <div className="login">
 
-                <button  ton className="btn btn-outline-success" type="submit">
+              <a href="/login">
+                <button ton className="btn btn-outline-success" type="submit">
                   Log in
                 </button>
-                </a>
-              </div>
+              </a>
+            </div>
+            <div className="signup">
               <a href="/signup">
-
-              <button
-                className="btn btn-outline-success signupbtn"
-                type="submit"
-              >
-                Sign Up
-              </button>
+                <button
+                  className="btn btn-outline-success signupbtn"
+                  type="submit"
+                  
+                >
+                  Sign Up
+                </button>
+              </a>
+            </div>
+            </div>
+            <div className="user">
+            <a href="/user">
+              <img src="./assets/user.png" className="userIcon" alt=""/>
               </a>
             </div>
           </div>

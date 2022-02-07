@@ -79,7 +79,9 @@
 }
 
 .btn:hover{
-  background-color: rgb(255, 251, 24);
+  background-color: rgb(11, 145, 33);
+  color: black;
+  font-weight: bold;
 }
 
 .flex{
@@ -89,7 +91,13 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
-
+/* .imgDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+} */
 .img-style{
   height: 5rem  ;
   width: 2rem;
@@ -105,11 +113,11 @@
 
 .itemalign{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   /* flex-direction: row; */
   flex-wrap: wrap;
-
+  margin-top: 12px;
 }
 
 .card{
@@ -118,12 +126,13 @@
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
-  height: 30%;
+  height:100%;
   border-radius: 10px;
   width: 300px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
+  margin-top: 12px;
 }
 /* 
 /* .card-body{

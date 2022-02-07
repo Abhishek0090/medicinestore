@@ -3,26 +3,19 @@ import '../App.css';
 
 const Medicines = ({id,name,price,description,tag,img} ) => {
 
-  const [search, setSearch] = useState(null)
-
   return (
     <div>
-      <div className="card " style={{ width: "15rem" }}>
+      <div className="card " style={{ width: "11rem",margin:"10px" }}>
+      <div className="imgDiv">
         <a href="/medicines">
-        <img src={img}  className="card-img-top img-style" alt="..."/>
+        <img src={img}  className="img-style" alt="..."/>
         </a>
+      </div>
         <div className="card-body">
-          <h5 className="card-title fw-bold">{name}</h5>
+          <h5 className="card-title fw-bold sm">{name}</h5>
          
           <h6 className="card-title fst-italic">MRP :₹{" "}{price}</h6>
-          {/* <div className="btn-med">
-          <a href="#" className="btn btn-success" onClick={()=>console.log("Buy now")}>
-            Buy
-          </a>
-          <a href="#" className="btn1 btn-warning">
-            Add to Cart          
-            </a>
-          </div> */}
+          
         </div>
       </div>
     </div>

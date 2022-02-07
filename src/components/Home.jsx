@@ -1,25 +1,30 @@
-import React ,{useContext,useState} from 'react'
+import React ,{useContext,useState,useEffect} from 'react'
 import Medicines from './Medicines'
 import '../App.css';
-import SlickDemo from "../components/Carousel/SlickDemo";
 import { useDispatch ,useSelector } from 'react-redux';
 import SlickDemo1 from './Carousel/SlickDemo1';
 
 const Home = () => {
-
+  // const [med,setMed] = useState({})
+  // useEffect(async()=>{
+  //   const data = await fetch("http://localhost:3001/api/meds",(req,res)=>{
+  //       const [info] = res.json();
+  //       setMed(info);
+  //       console.log(info)
+  //   })
+  //   data();
+  // },[fetch])
   // const { item } = useContext(MedicineContext);
- const item = useSelector(state => state.Reducers.item)
- const dispatch = useDispatch()
+ const item = useSelector(state => state.getProducts.item)
     return (
       <>
         <SlickDemo1/>
         <div className='App'>
-          <div className='d-flex itemalign'>
+          <div className='itemalign'>
           {
-            item.slice(0, 10).map((ite)=>{
-              return <Medicines key={ite.id} {...ite} />   
+            item.map((item)=>{
+              return <Medicines key={item.id} {...item} />   
             })
-
           }
           </div>
         </div>

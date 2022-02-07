@@ -1,0 +1,60 @@
+.colorNav{
+    background-color: rgb(250, 255, 248);
+}
+#form1{
+    width: 450px;
+}
+
+.validation{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+}
+.centerSearch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginandsignup{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cart-icon{
+    margin-left: 15px;
+}
+.cart-icon img{
+    cursor: pointer;
+    height: 3rem;
+}
+
+.cartIcon:hover{
+    cursor: pointer;
+}
+
+.Active{
+    font-weight: bold;
+}
+.nav-link{
+    font-weight: 1000;
+}
+.nav-link:hover{
+    font-weight: bolder;
+}
+.login{
+    margin-right: 10px;
+}
+
+.user img{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    height: 50px;
+    width: 50px;
+  }

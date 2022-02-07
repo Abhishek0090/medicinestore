@@ -3,15 +3,17 @@ import { useSelector } from "react-redux";
 import MedicineInfo from "./MedicineInfo";
 
 const medicinePassing = () => {
-    const item = useSelector(state=>state.Reducer.item);
+    const item = useSelector(state=>state.Reducers.item);
     
   return (
     <>
+    <div>
       {
         item.map((ele,index)=>{
           return <MedicineInfo key={ele.id} {...ele}/>
         })
       }
+    </div>
     </>
   );
 };

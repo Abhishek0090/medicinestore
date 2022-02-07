@@ -4,7 +4,7 @@ import Cart from "./Cart";
 import './css/cart.css';
 import Scrollbars from "react-custom-scrollbars-2";
 import { useState } from "react";
-import { Medicineapi } from "../Context/Medicineapi";
+import { Medicineapi } from "../api/Medicineapi";
 
 const CartItem = () => {
 // 
