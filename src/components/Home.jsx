@@ -4,6 +4,7 @@ import '../App.css';
 import { useDispatch ,useSelector } from 'react-redux';
 import SlickDemo1 from './Carousel/SlickDemo1';
 import Navbar from './Navbar';
+import SearchBar from './SearchBar';
 
 const Home = () => {
 //   const [med,setMed] = useState(null);
@@ -15,7 +16,8 @@ const Home = () => {
 //  const [filterdata, setFilterData] = useState([]);
     return (
       <>
-     <Navbar/>
+   
+     <SearchBar/>
       </>
     )
   }

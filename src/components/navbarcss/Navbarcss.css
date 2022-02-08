@@ -6,7 +6,7 @@
 }
 
 .validation{
-    margin-left: 100px;
+    margin-left: 20px;
     display: flex;
     flex-direction: row;
     margin-right: 40px;
@@ -16,6 +16,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 12px;
 }
 
 .loginandsignup{
@@ -27,6 +28,7 @@
 
 .cart-icon{
     margin-left: 15px;
+    
 }
 .cart-icon img{
     cursor: pointer;
@@ -64,3 +66,23 @@
       margin: 0;
       padding: 0;
   }
+
+.logocss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.centernav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+
+.navitem{
+    margin: 12px;
+}
