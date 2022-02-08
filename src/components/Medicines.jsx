@@ -12,7 +12,7 @@ const Medicines = ({id,name,price,description,tag,img} ) => {
         </a>
       </div>
         <div className="card-body">
-          <h5 className="card-title fw-bold sm">{name}</h5>
+          <h5 className="card-title fw-bold size">{name}</h5>
          
           <h6 className="card-title fst-italic">MRP :₹{" "}{price}</h6>
           

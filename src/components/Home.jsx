@@ -3,6 +3,7 @@ import Medicines from './Medicines'
 import '../App.css';
 import { useDispatch ,useSelector } from 'react-redux';
 import SlickDemo1 from './Carousel/SlickDemo1';
+import Navbar from './Navbar';
 
 const Home = () => {
 //   const [med,setMed] = useState(null);
@@ -10,19 +11,11 @@ const Home = () => {
 //     fetch("http://localhost:3001/api/meds").then(response=>response.json()).then(data=> setMed(data))
   
 // })
- const item = useSelector(state => state.getProducts.item)
+//  const item = useSelector(state => state.getProducts.item)
+//  const [filterdata, setFilterData] = useState([]);
     return (
       <>
-        <SlickDemo1/>
-        <div className='App'>
-          <div className='itemalign'>
-          {
-            item.map((item)=>{
-              return <Medicines key={item.id} {...item} />   
-            })
-          }
-          </div>
-        </div>
+     <Navbar/>
       </>
     )
   }
