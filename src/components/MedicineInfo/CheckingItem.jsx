@@ -1,15 +1,21 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import MedicineInfo from "./MedicineInfo";
+import {Medicineapi} from "../api/Medicineapi";
 
 const medicinePassing = () => {
-    const item = useSelector(state=>state.getProducts.item);
+    const item = Medicineapi;
+    const filter = item.filter((data)=>{
+      data.id != id
+      return data;
+    }
+    )
     
   return (
     <>
     <div>
       {
-        item.map((ele,index)=>{
+        filter.map((ele,index)=>{
           return <MedicineInfo key={ele.id} {...ele}/>
         })
       }

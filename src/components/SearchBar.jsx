@@ -36,8 +36,8 @@ const SearchBar = () => {
             class="form-control"
           />
         </div>
-        <button id="search-button" type="button" class="btn btn-success">
-          <i class="fas fa-search"></i>
+        <button id="search-button" type="button" class="searchbtn">
+        <img src="./assets/search.png" className="searchicon" alt="" />
         </button>
       </div>
       {search.length === 0 ? <SlickDemo1 /> : <span />}
@@ -46,6 +46,8 @@ const SearchBar = () => {
           return <Medicines key={val.id} {...val} />;
         })}
       </div>
+      <hr/>
+      
     </>
   );
 };

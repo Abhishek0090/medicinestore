@@ -12,8 +12,10 @@ const SignUp = () => {
   };
 
   return (
-    <div className="signup">
-    <form>
+    <>
+
+    <div className="logindiv">
+    <form type="submit" >
  <div className="mb-3">
    <label for="exampleInputEmail1" className="form-label">Email address</label>
    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
@@ -29,11 +31,12 @@ const SignUp = () => {
  </div>
  <div className="mb-3 form-check">
    <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
-   <label className="form-check-label" for="exampleCheck1">Check me out</label>
+   <label className="form-check-label" for="exampleCheck1">I agree with Terms & Conditions</label>
  </div>
  <button type="submit" className="btn btn-primary">Submit</button>
 </form>
 </div>
+    </>
   );
 };
 

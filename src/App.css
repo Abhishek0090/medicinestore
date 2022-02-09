@@ -80,9 +80,10 @@
 }
 
 .btn:hover{
-  background-color: rgb(11, 145, 33);
+  background-color: rgb(0, 0, 0);
   color: black;
   font-weight: bold;
+  box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
 }
 
 .flex{
@@ -158,4 +159,24 @@
 
 .size{
   font-size: 16px;
+}
+
+.searchbtn{
+  border-radius: 7px;
+  padding: 0px;
+}
+
+.searchicon{
+  height: 37px;
+  filter: invert();
+  background-color: azure;
+  width: 40px;
+  padding: 6px;
+}
+.searchbtn:hover{
+  background-color: white;
+}
+.searchicon:hover{
+  background-color: white;
+  
 }
