@@ -12,7 +12,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="logindiv">
+    <div className="signup">
     <form>
  <div className="mb-3">
    <label for="exampleInputEmail1" className="form-label">Email address</label>

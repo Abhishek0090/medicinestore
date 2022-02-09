@@ -37,7 +37,7 @@ export const Medicineapi = [
         "id" : 4,
         "name" : "Zandu Balm",
         "price" : 30,
-        "img" : "https://5.imimg.com/data5/NF/QD/MY-13059620/zandu-balm-500x500.png",
+        "img" : "https://th.bing.com/th/id/R.c12c9822c448f80127a07582ca19b0cb?rik=zHGU4IuTh5BmNg&riu=http%3a%2f%2fwww.mchemist.com%2fproduct_images%2f1000%2fzandu-balm-10gm_1493040698.jpg&ehk=FIBiwh93nxJhQtqdchcGtgSo3eBzioyQ7Dc%2bGZchJZw%3d&risl=&pid=ImgRaw&r=0",
         "quantity"  : 1,
         "description"  : "Zandu Balm  is a safe & effective remedy for severe pain and aches. It provides fast and long-lasting relief from strong headaches, strong backache, strong knee pain & joint pain, strong neck & shoulder pain, sprain, muscle pain, inflammation, cold, etc.",
         "tag"  : "headache cold cough",
@@ -109,6 +109,29 @@ export const Medicineapi = [
         "tag"  : "immunity blood weight",
         "ingredients" : "Amla, Ashwagandha, Hareetaki, Dashmul, Ghrit and several other herbs and herbal extracts.",
         "direction" : " Chyawanprash's recommended dosage is 1 teaspoonful twice daily preferably followed by warm milk or water"
+    },
+    {
+        "id":11,
+        "name" : "Benadryl Cough Syrup",
+        "price" : 58,
+        "img" : "https://newassets.apollo247.com/pub/media/catalog/product/b/e/ben0006.jpg",
+        "quantity" :1,
+        "description" : "Benadryl Syrup is used in the treatment of cough, and also, relieves allergy symptoms such as runny nose, stuffy nose, sneezing, watery eyes and congestion or stuffiness",
+        "tag" : "cough congestion drycough",
+        "ingredients" : "Benadryl Syrup is a combination of three medicines: Diphenhydramine, Ammonium chloride and Sodium citrate, which relieves cough.",
+        "direction" : "Take Benadryl Cough Formula Syrup 50 ml with or without food as advised by your doctor. Benadryl Cough Formula Syrup 50 ml should be taken by mouth using the measuring cup provided with the pack. Shake the bottle well before each use."
+
+    },
+    {
+        "id" : 12,
+        "name" : "Moov Pain Relief Cream",
+        "price" : 65,
+        "img" : "https://newassets.apollo247.com/pub/media/catalog/product/m/o/moo0020.jpg",
+        "quantity" : 1,
+        "description" : "Moov Ointment is made using 100% ayurvedic ingredients, which penetrate deep inside to produce the warmth hence, it helps in relieving the pain and relaxing the muscles",
+        "tag" : "pain backpain ointment",
+        "ingredients" : "Turpentine Oil, Nilgiri Oil, Wintergreen Oil, Mint Extract.",
+        "direction" : "Spread two pulp full of Moov Pain Relief Cream on the affected area to form a thin film"
     }
 
 ]

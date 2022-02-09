@@ -2,15 +2,31 @@ import React from "react";
 import "./navbarcss/Navbarcss.css";
 import { useState } from "react";
 import "../App.css";
+  import "./navbarcss/Navbarcss.css";
+import SlickDemo1 from "./Carousel/SlickDemo1";
 
-
+import { useSelector } from "react-redux";
+import Medicines from "./Medicines";
 const Navbar = () => {
-  
+  const item = useSelector((state) => state.getProducts.item);
+  const [search, setSearch] = useState("");
+  const handlefilter = (e) => {
+    const data = e.target.value;
+    setSearch(data);
+  };
+
+  const filtereddata = item.filter((val) => {
+    if (search.length < 0) {
+      return val;
+    } else {
+      return val.name?.toLowerCase().includes(search);
+    }
+  }); 
   return (
     <>
       <div>
         <nav
-          className="navbar navbar-expand-sm navbar-light bg-light  navbar-fixed-top  nav nav-tabs card-header-tabs navcss"
+          className="navbar navbar-expand-sm navbarcolor navbar-fixed-top  nav nav-tabs card-header-tabs navcss"
           role="navigation"
         >
           <div className="container-fluid">
@@ -33,9 +49,12 @@ const Navbar = () => {
                   alt="logo"
                   height={"50%"}
                   width={"100px"}
+                  className="logcss"
                 />
               </a>
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <span className="centernav">
+
+              <ul className="navbar-nav  me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <a className="nav-link" aria-current="page" href="/">
                     Home
@@ -52,12 +71,20 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li className="nav-item">
+                  <a className="nav-link" href="/contact">
+                    Contact
+                  </a>
+                </li>
+                <li className="nav-item">
                   <a className="nav-link" href="/help">
                     Help
                   </a>
                 </li>
               </ul>
 
+              </span>
+        
+     
               <div className="cart-icon">
                 <a
                   href="/cart"
@@ -67,12 +94,12 @@ const Navbar = () => {
                     src="./assets/carticon.png"
                     alt="cart"
                     className="cartIcon"
-                    style={{marginLeft : "23px"}}
+                    style={{ marginLeft: "23px" }}
                   />
 
-                  <span style={{ marginLeft: "10px", fontWeight: "bold" }}>
+                  {/* <span style={{ marginLeft: "10px", fontWeight: "bold" ,color:"black"}}>
                     Cart
-                  </span>
+                  </span> */}
                 </a>
               </div>
               <div className="validation">
@@ -80,7 +107,7 @@ const Navbar = () => {
                   <a href="/login">
                     <button
                       ton
-                      className="btn btn-outline-success"
+                      className="loginbtn"
                       type="submit"
                     >
                       Log in
@@ -90,7 +117,7 @@ const Navbar = () => {
                 <div className="signup">
                   <a href="/signup">
                     <button
-                      className="btn btn-outline-success signupbtn"
+                      className="signupbtn"
                       type="submit"
                     >
                       Sign Up
@@ -107,6 +134,7 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
+      
     </>
   );
 };

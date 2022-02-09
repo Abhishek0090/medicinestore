@@ -18,11 +18,12 @@ import Cart from "./components/shoppingcart/Cart";
 import CartItem from "./components/shoppingcart/CartItem";
 import About from "./components/About";
 import User from "./components/User";
+import { Contact } from "./components/Contact";
 
 
 function App() {
   useEffect(()=>{
-    document.title = "+ MediCure +"
+    document.title = "MediCare"
   })
   return (
     <div className="App">
@@ -37,6 +38,8 @@ function App() {
         <Route exact path = "/about" element={<About/>}/>
         <Route exact path = "/user" element={<User/>}/>
         <Route exact path = "/search" element={<Medicines/>}/>
+
+        <Route exact path = "/contact" element={<Contact/>}/>
 
       </Routes>
       {/* <footer className="footer">

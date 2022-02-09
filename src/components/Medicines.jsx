@@ -4,8 +4,8 @@ import '../App.css';
 const Medicines = ({id,name,price,description,tag,img} ) => {
 
   return (
+      <div className="card" style={{ width: "11rem",margin:"10px" }}>
     <div>
-      <div className="card " style={{ width: "11rem",margin:"10px" }}>
       <div className="imgDiv">
         <a href="/medicines">
         <img src={img}  className="img-style" alt="..."/>

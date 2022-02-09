@@ -41,7 +41,7 @@ const SearchBar = () => {
         </button>
       </div>
       {search.length === 0 ? <SlickDemo1 /> : <span />}
-      <div className="itemalign">
+      <div className="itemalign"> 
         {filtereddata.map((val, key) => {
           return <Medicines key={val.id} {...val} />;
         })}

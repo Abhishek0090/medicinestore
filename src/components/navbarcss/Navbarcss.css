@@ -16,7 +16,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .loginandsignup{
@@ -33,6 +34,7 @@
 .cart-icon img{
     cursor: pointer;
     height: 3rem;
+    filter: invert();
 }
 
 .cartIcon:hover{
@@ -60,6 +62,7 @@
     height: 50px;
     width: 50px;
     margin-right: 12px;
+    filter: invert();
   }
 
 .navcss{
@@ -73,7 +76,10 @@
     justify-content: center;
     flex-direction: column;
 }
-
+.logcss{
+    height: 85px;
+    width: 118px;
+}
 .centernav{
     display: flex;
     flex-direction: column;
@@ -85,4 +91,33 @@
 
 .navitem{
     margin: 12px;
+}
+
+.centernav{
+  
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 25px;
+   
+}
+li{
+    margin-right: 70px;
+    padding: 0px;
+}
+
+li:hover{
+    cursor: pointer;
+    box-shadow: 0px 3px 3px 2px rgb(114, 114, 114);
+    border-radius: 5px;
+}
+
+.navbarcolor{
+    background-color: black;
+}
+.nav-link{
+    color: rgb(228, 222, 222);
+}
+.nav-link:hover{
+    color: white;
+
 }
